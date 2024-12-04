@@ -53,7 +53,7 @@ var swiper = new Swiper(".mySwiper", {
     });
   });
 
-  // Add New Text
+ 
 document.getElementById("add-text").addEventListener("click", () => {
     const activeSlide = document.querySelector(".swiper-slide-active .image-container");
     const newText = document.createElement("div");
@@ -62,6 +62,6 @@ document.getElementById("add-text").addEventListener("click", () => {
     newText.textContent = "New Text";
     activeSlide.appendChild(newText);
     enableTextDrag(newText);
-    newText.click(); // Automatically select the new text
+    newText.click(); 
   });
   
